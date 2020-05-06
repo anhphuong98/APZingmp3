@@ -3,9 +3,11 @@ package com.example.apzing;
 public class Song {
     private String title;
     private int file;
-    public Song(String title, int file) {
+    private int imageSong;
+    public Song(String title, int file, int imageSong) {
         this.title = title;
         this.file = file;
+        this.imageSong = imageSong;
     }
 
     public String getTitle() {
@@ -14,5 +16,8 @@ public class Song {
 
     public int getFile() {
         return file;
+    }
+    public int getImageSong() {
+        return  imageSong;
     }
 }
